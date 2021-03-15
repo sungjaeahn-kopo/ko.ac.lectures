@@ -18,8 +18,8 @@ public class CarMain {	// 실행 클래스와 참조 클래스는 가급적 따�
 		
 		
 		// c = c2;	// shallow copy - 유령영역 발생
-		// heap은 브레이스 넘어가도 사라지지 않음
-		// 안쓰는 영역을 지워줘야하지만, Java는 자동으로 지워줌
+		// heap은 브레이스 넘어가도 사라지지 않음, 메모리 손실
+		// 안쓰는 영역을 지워줘야하지만, Java는 자동으로 지워줌 (garbage collector)
 		
 		System.out.println("모델명 : " + c.name + ", 가격 : " + c.price + "만원, 제조사 : " + c.company); 	// ctrl + space
 
