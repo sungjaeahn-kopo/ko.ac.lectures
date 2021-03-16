@@ -32,6 +32,13 @@ import java.util.Scanner;
   
   	총계 : 5100원
  */
+/*
+  이슈
+  1. 인스턴스 객체를 만들지 않으면 NULL 발생!
+  2. 키보드 입력시 오
+ */
+
+
 
 public class Homework01 {
 	
@@ -63,8 +70,7 @@ public class Homework01 {
 		System.out.println("번호" + '\t' + "아이스크림명" + '\t' + "아이스크림가격");
 
 		for(int i = 0; i < num; i++) {	// for문 2 - 영수증 출력 부분
-			System.out.print(i+1);	// 아래 문장과 같이 사용하면 오류, why? i=9로 인식
-			System.out.println('\t' + ice[i].name + '\t' + '\t' + ice[i].price);
+			System.out.println(""+(i+1) +'\t' + ice[i].name + '\t' + '\t' + ice[i].price);
 			total += ice[i].price;
 		}
 
