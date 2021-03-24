@@ -20,14 +20,11 @@ public class DateMain {
 			int year = PrintCalendar.getYear();
 			PrintCalendar.PrintCalendar(year);
 			break;
-			
 		
 		case 2:		// 특정월 출력
 			year = PrintCalendar.getYear();
 			int month = PrintCalendar.getMonth();
-			
 			PrintCalendar.PrintCalendar(year, month);
-
 			break;
 			
 		case 3:		// 종료
