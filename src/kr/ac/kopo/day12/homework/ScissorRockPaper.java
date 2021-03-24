@@ -12,14 +12,10 @@ public class ScissorRockPaper implements Game {
 	final static int ROCK = 2;	//가위
 	final static int PAPER = 3;	//가위
 	
-	public ScissorRockPaper() {
+	int startGame(int you) {
 		System.out.println("가위바위보 게임입니다.");
 		System.out.println("가위바위보 중 하나를 선택하세요.");
 		System.out.println("1:가위, 2:바위, 3:보");
-	}
-	
-	
-	int startGame(int you) {
 		
 		you = sc.nextInt();		// 사용자 가위 바위 보 선택
 		sc.nextLine();
