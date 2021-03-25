@@ -69,7 +69,7 @@ public class PrintCalendar {
 			System.out.print("\t");
 		}
 		
-		for(int i = 1 ; i < lastday ; i ++) {	// 1일부터 월말까지 출력
+		for(int i = 1 ; i <= lastday ; i ++) {	// 1일부터 월말까지 출력
 			System.out.print(i + "\t");
 			
 			if((theDay+i-1) % 7 == 0) {	// 공백칸 + 숫자칸  = 7개 유지 
