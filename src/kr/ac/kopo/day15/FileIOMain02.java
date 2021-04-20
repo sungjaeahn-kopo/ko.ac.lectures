@@ -22,9 +22,12 @@ public class FileIOMain02 {
 		FileOutputStream fos = null;
 		try {
 			//	1. stream open
-			FileInputStream fis = new FileInputStream("iodata/dog.jpeg");
-			FileOutputStream fos = new FileOutputStream("iodata/dog2.jpeg");
+			fis = new FileInputStream("iodata/dog.jpeg");
+			fos = new FileOutputStream("iodata/dog2.jpeg");
 		
+			long start = System.currentTimeMillis();
+					
+			
 			//	2. read / write
 			while(true) {
 				int c = fis.read();
